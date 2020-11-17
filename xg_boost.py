@@ -4,6 +4,8 @@
 # XGboost is a algorithm, but we need to install and import the XGBoost framework to use it.
 # We need to Install XGboost framework from its website.
 
+# We dont need to apply preprocessing as it is unnecessary in XGBoost.
+
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
@@ -15,6 +17,12 @@ X = dataset.iloc[:, 3:-1].values
 y = dataset.iloc[:, -1].values
 print(X)
 print(y)
+
+
+
+# We dont need to apply preprocessing as it is unnecessary in XGBoost.
+
+
 
 # Encoding categorical data
 # Label Encoding the "Gender" column
@@ -36,6 +44,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 
 
 #-------------------------- Training XGBoost on the Training set --------------------------------
+
+# We dont need to apply preprocessing as it is unnecessary in XGBoost.
 
 from xgboost import XGBClassifier
 classifier = XGBClassifier()
