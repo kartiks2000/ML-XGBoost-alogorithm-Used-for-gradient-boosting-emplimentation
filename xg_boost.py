@@ -48,6 +48,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 # We dont need to apply preprocessing as it is unnecessary in XGBoost.
 
 from xgboost import XGBClassifier
+# We can pass many parameters to the XGBoost function below.
 classifier = XGBClassifier()
 classifier.fit(X_train, y_train)
 
